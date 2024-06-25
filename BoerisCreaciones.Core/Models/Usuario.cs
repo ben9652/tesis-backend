@@ -1,0 +1,152 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BoerisCreaciones.Core.Models
+{
+    public class UsuarioVM
+    {
+        public UsuarioVM()
+        {
+
+        }
+
+        public UsuarioVM(
+            int id_usuario,
+            string nombre,
+            string email,
+            string username,
+            string password,
+            DateTime fecha_alta,
+            char rol,
+            char estado,
+            string? domicilio,
+            UInt64? telefono,
+            string? observaciones
+            )
+        {
+            this.id_usuario = id_usuario;
+            this.nombre = nombre;
+            this.email = email;
+            this.username = username;
+            this.password = password;
+            this.fecha_alta = fecha_alta;
+            this.rol = rol;
+            this.estado = estado;
+            this.domicilio = domicilio;
+            this.telefono = telefono;
+            this.observaciones = observaciones;
+        }
+
+        public int id_usuario { get; set; }
+        public string nombre { get; set; }
+        public string email { get; set; }
+        public string username { get; set; }
+        public string password { get; set; }
+        public DateTime fecha_alta { get; set; }
+        public char rol { get; set; }
+        public char estado { get; set; }
+        public string? domicilio { get; set; }
+        public UInt64? telefono { get; set; }
+        public string? observaciones { get; set; }
+
+        public override string ToString()
+        {
+            return
+                "ID de usuario: " + id_usuario + '\n' +
+                "Nombre: " + nombre + '\n' +
+                "E-mail: " + email + '\n' +
+                "Nombre de usuario: " + username + '\n' +
+                "Contraseña: " + password + '\n' +
+                "Fecha de alta: " + fecha_alta + '\n' +
+                "Rol: " + rol + '\n' +
+                "Estado: " + estado + '\n' +
+                "Domicilio: " + domicilio + '\n' +
+                "Teléfono: " + telefono + '\n' +
+                "Observaciones: " + observaciones + '\n';
+        }
+    }
+
+    public class UsuarioDTO
+    {
+        public UsuarioDTO()
+        {
+
+        }
+
+        public UsuarioDTO(
+            int id_user,
+            string username,
+            string? lastName,
+            string firstName,
+            string email,
+            char role
+            )
+        {
+            this.id_user = id_user;
+            this.username = username;
+            this.lastName = lastName;
+            this.firstName = firstName;
+            this.email = email;
+            this.role = role;
+        }
+
+        public int id_user { get; set; }
+        public string username { get; set; }
+        public string? lastName { get; set; }
+        public string firstName { get; set; }
+        public string email { get; set; }
+        public char role { get; set; }
+    }
+
+    public class UsuarioLogin
+    {
+        public UsuarioLogin()
+        {
+
+        }
+
+        public UsuarioLogin(string username, string password)
+        {
+            this.username = username;
+            this.password = password;
+        }
+
+        public string username { get; set; }
+        public string password { get; set; }
+    }
+
+    public class UsuarioRegistro
+    {
+        public UsuarioRegistro(
+            string nombre,
+            string? apellido,
+            string email,
+            string username,
+            string password,
+            char rol,
+            string? domicilio,
+            UInt64? telefono,
+            string? observaciones
+            )
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.email = email;
+            this.username = username;
+            this.password = password;
+            this.rol = rol;
+            this.domicilio = domicilio;
+            this.telefono = telefono;
+            this.observaciones = observaciones;
+        }
+
+        public string nombre { get; set; }
+        public string? apellido { get; set; }
+        public string email { get; set; }
+        public string username { get; set; }
+        public string password { get; set; }
+        public char rol { get; set; }
+        public string? domicilio { get; set; }
+        public UInt64? telefono { get; set; }
+        public string? observaciones { get; set; }
+    }
+}

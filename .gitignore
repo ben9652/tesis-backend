@@ -1,0 +1,17 @@
+# compiled output
+**/obj/
+**/bin/
+/BoerisCreaciones.Api/.env
+/BoerisCreaciones.Api/publish
+/BoerisCreaciones.Api/bin
+/BoerisCreaciones.Api/obj/
+# System Files
+.DS_Store
+Thumbs.db
+.editorconfige
+*.suo
+**/.vs/
+.vscode/
+BoerisCreaciones.Api/Properties/PublishProfiles/FTPProfile.pubxml.user
+**/FTPProfile.pubxml.user
+/BoerisCreaciones.Api/logs
