@@ -15,3 +15,4 @@ Thumbs.db
 BoerisCreaciones.Api/Properties/PublishProfiles/FTPProfile.pubxml.user
 **/FTPProfile.pubxml.user
 /BoerisCreaciones.Api/logs
+.github/

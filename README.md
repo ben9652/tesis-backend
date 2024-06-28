@@ -1,5 +1,5 @@
-# tesis-backend
-Muestra al público del proyecto de Back-End de la tesis que estoy desarrollando como mi trabajo de graduación
+# boeris-creaciones-backend
+Proyecto en ASP.NET para el Back-End de la app.
 
 ## Configuración para la conexión adecuada con el servidor de base de datos
 Debe crearse un archivo `.env` en la ubicación `./BoerisCreaciones.Api/` que contenga las siguientes variables de entorno para poder realizar las conexiones a la base de datos y configurar todo lo relacionado a Json Web Token para poder hacer las autorizaciones sobre los endpoints:
